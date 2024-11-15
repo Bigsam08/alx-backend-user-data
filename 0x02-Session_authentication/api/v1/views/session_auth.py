@@ -27,9 +27,10 @@ def login() -> str:
     response = jsonify(user.to_json())
     response.set_cookie(cookie_name, session_id)
     return response
- 
- 
-@app_views.route('/auth_session/logout', methods=['DELETE'], strict_slashes=False)
+
+
+@app_views.route('/auth_session/logout', methods=['DELETE'],
+                 strict_slashes=False)
 def logout() -> str:
     ''' delete session and log user out'''
     from api.v1.app import auth
