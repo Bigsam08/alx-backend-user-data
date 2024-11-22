@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-''' '''
+''' Creating and sqlAlchamey model for user'''
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
